@@ -12,5 +12,7 @@ def who_are_you
     puts "How do you identify?"
     gender = gets.chomp
     puts "Who will you become"
+    puts "(Choose: Bulbasaur, Charmander, Squirtle)"
+    life = gets.chomp
     binding.pry
 end

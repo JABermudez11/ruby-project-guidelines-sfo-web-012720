@@ -1,9 +1,3 @@
-class Pokemon
-
-    def initialize
-
-    end
-end
 
 def choose_pokemon
     bulbasaur = PokeApi.get(pokemon: 'bulbasaur').name
