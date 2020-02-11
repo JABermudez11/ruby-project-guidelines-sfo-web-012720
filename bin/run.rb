@@ -1,5 +1,6 @@
 require_relative '../config/environment'
 
+welcome
 
-
-puts "HELLO WORLD"
+who_are_you
+choose_pokemon
