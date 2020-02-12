@@ -1,3 +1,7 @@
+class Pokemon < ActiveRecord::Base
+    
+end
+
 # need to select which pokemon you want to play as
 def pokemon_life
     
