@@ -4,6 +4,7 @@ class CreatePokemons < ActiveRecord::Migration[5.2]
             t.string :name
             t.string :move
             t.integer :hp
+            t.string :item
         end
     end
 end
