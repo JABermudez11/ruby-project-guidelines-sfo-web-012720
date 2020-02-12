@@ -9,7 +9,8 @@ class User < ActiveRecord::Base
         self.level ||= 1
     end
 
-    def selected_pokemon
-        Pokemon.create(name: )
+    # the pokemon you choose in the beginning of the interface
+    def self.selected_pokemon
+        chosen
     end
 end

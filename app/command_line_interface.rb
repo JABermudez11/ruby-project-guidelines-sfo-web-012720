@@ -13,6 +13,6 @@ def who_are_you
     gender = gets.chomp
     puts "Who will you become"
     puts "(Choose: Bulbasaur, Charmander, Squirtle)"
-    life = gets.chomp
+    chosen = gets.chomp
     binding.pry
 end
