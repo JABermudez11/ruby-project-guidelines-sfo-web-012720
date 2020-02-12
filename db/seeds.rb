@@ -61,3 +61,10 @@ move0 = PokeApi.get(move: "gust").name
 poki0 = Pokemon.find_by(name: "pidgey")
 poki0.update(move: move0)
 #####
+
+# getting pokemon description
+# bs = PokeApi.get(pokemon: "bulbasaur").species
+
+binding.pry
+
+puts "pokeawesome"
