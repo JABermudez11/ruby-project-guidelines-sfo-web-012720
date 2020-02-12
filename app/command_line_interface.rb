@@ -9,8 +9,7 @@ end
 def who_are_you
     puts "What is your name?"
     name = gets.chomp
-    puts "How do you identify?"
-    gender = gets.chomp
-    puts "Who will you become"
+    puts "Who will you become?"
+    puts "<Pikachu, the electric mouse> <Bulbasaur, the seed"
     binding.pry
 end
