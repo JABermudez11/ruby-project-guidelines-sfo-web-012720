@@ -13,5 +13,7 @@ def who_are_you
     puts "Type one of the names of the Pokemon from the list..."
     puts "<Pikachu><Bulbasaur><Charmander><Squirtle><Eevee>"
     life = gets.chomp
+
+    User.create(name: name)
     binding.pry
 end
