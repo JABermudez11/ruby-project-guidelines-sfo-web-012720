@@ -10,6 +10,8 @@ def who_are_you
     puts "What is your name?"
     name = gets.chomp
     puts "Who will you become?"
-    puts "<Pikachu, the electric mouse> <Bulbasaur, the seed"
+    puts "Type one of the names of the Pokemon from the list..."
+    puts "<Pikachu><Bulbasaur><Charmander><Squirtle><Eevee>"
+    life = gets.chomp
     binding.pry
 end
