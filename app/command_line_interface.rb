@@ -23,8 +23,7 @@ def who_are_you
     puts "*==*==*" * 10
     puts "*==*==*" * 10
     puts 
-    
-    binding.pry
+        
 end
 
 def create_user(name, selected)
@@ -59,11 +58,18 @@ end
 
 def intermission
     puts "Type in what you want to do next:"
-    puts "<Begin Next Battle><Profile><Pokemon><Save>"
+    puts "<Battle><Profile><Pokemon><Save>"
     puts "(Saving will save your progress and quit the interface)"
+    
     input = gets.chomp
+    input = input.downcase.capitalize
+    
+    case input
+    when "Battle"
+        battle
+    end
 end
 
-def battle_scene
+def battle
     
 end
