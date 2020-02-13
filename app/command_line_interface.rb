@@ -20,7 +20,5 @@ def who_are_you
 end
 
 def create_user(name, selected)
-    User.create(name: name)
-
-    User.selected_pokemon = selected
+    User.create(name: name, selected_poke: selected)
 end
