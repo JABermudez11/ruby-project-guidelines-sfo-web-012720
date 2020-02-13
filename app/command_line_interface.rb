@@ -14,7 +14,7 @@ def who_are_you
     puts "<Pikachu><Bulbasaur><Charmander><Squirtle><Eevee>"
     starter = gets.chomp
 
-    starter = starter.lowercase.capitalize
+    starter = starter.downcase.capitalize
 
     choose_starter(starter)
     
