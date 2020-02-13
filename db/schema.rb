@@ -10,20 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2) do
-
-  create_table "pokemons", force: :cascade do |t|
-    t.string  "name"
-    t.string  "move"
-    t.integer "hp"
-    t.string  "item"
-    t.boolean "wild"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string  "name"
-    t.integer "level"
-    t.string  "selected_poke"
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
