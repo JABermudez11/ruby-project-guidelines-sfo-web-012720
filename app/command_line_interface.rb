@@ -14,8 +14,6 @@ def who_are_you
     puts "<Pikachu><Bulbasaur><Charmander><Squirtle><Eevee>"
     starter = gets.chomp
 
-    starter = starter.downcase.capitalize
-
     choose_starter(starter)
     
     # create user instance
@@ -28,8 +26,7 @@ def create_user(name, selected)
 end
 
 def choose_starter(starter)
-    # starter = gets.chomp
-    # starter = starter.lowercase.capitalize
+    starter = starter.lowercase.capitalize
 
     case starter
     when "Pikachu"
@@ -49,6 +46,7 @@ def choose_starter(starter)
         puts "Welcome to this world of Pokemon!"
     else
         puts "Please enter a valid name..."
-        choose_starter
+        input = gets.chomp
+        choose_starter(input)
     end
 end
