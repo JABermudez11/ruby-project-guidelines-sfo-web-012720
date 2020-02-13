@@ -18,9 +18,11 @@ def who_are_you
     
     # create user instance
     create_user(name, starter)
-    
+
+    puts
     puts "*==*==*" * 10
     puts "*==*==*" * 10
+    puts 
     
     binding.pry
 end
@@ -53,4 +55,8 @@ def choose_starter(starter)
         input = gets.chomp
         choose_starter(input)
     end
+end
+
+def battle_scene
+    
 end
