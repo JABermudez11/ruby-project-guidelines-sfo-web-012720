@@ -5,7 +5,7 @@ class CreatePokemons < ActiveRecord::Migration[4.2]
             t.string :move
             t.integer :hp
             t.string :item
-            t.boolean :wild
+            t.integer :user_id
         end
     end
 end
