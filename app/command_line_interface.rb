@@ -67,9 +67,13 @@ def intermission
     case input
     when "Battle"
         battle
+    else
+        puts "Invalid Input!"
+        intermission
     end
 end
 
 def battle
-    
+    # user_poke_id, opponent_id
+    Battle.create()
 end
