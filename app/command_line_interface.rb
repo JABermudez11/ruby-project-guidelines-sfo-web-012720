@@ -18,6 +18,10 @@ def who_are_you
     
     # create user instance
     create_user(name, starter)
+    
+    puts "*==*==*" * 10
+    puts "*==*==*" * 10
+    
     binding.pry
 end
 
@@ -26,7 +30,7 @@ def create_user(name, selected)
 end
 
 def choose_starter(starter)
-    starter = starter.lowercase.capitalize
+    starter = starter.downcase.capitalize
 
     case starter
     when "Pikachu"
