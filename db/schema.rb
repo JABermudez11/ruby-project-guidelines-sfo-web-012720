@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 2) do
 
   create_table "users", force: :cascade do |t|
     t.string  "name"
-    t.integer "selected_poke_id"
     t.integer "level"
+    t.string  "selected_poke"
   end
 
 end
