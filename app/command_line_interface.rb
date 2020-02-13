@@ -75,5 +75,6 @@ end
 
 def battle
     # user_poke_id, opponent_id
+    
     Battle.create()
 end
