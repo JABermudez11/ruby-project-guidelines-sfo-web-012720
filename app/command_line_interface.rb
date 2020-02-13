@@ -57,6 +57,13 @@ def choose_starter(starter)
     end
 end
 
+def intermission
+    puts "Type in what you want to do next:"
+    puts "<Begin Next Battle><Profile><Pokemon><Save>"
+    puts "(Saving will save your progress and quit the interface)"
+    input = gets.chomp
+end
+
 def battle_scene
     
 end
