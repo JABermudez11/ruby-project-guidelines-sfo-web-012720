@@ -73,8 +73,13 @@ def intermission
     end
 end
 
+# move = PokeApi.get(move: "thunder-shock").name
+# poki = Pokemon.find_by(name: "pikachu")
+# poki.update(move: move)
+
 def battle
     # user_poke_id, opponent_id
+    user = Pokemon.find_by(user_id: )
     
     Battle.create()
 end
