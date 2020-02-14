@@ -18,11 +18,12 @@ def who_are_you
     
     # create user instance
     create_user(name, starter)
-    
+
+    puts
     puts "*==*==*" * 10
     puts "*==*==*" * 10
-    
-    binding.pry
+    puts 
+        
 end
 
 def create_user(name, selected)
@@ -53,4 +54,33 @@ def choose_starter(starter)
         input = gets.chomp
         choose_starter(input)
     end
+end
+
+def intermission
+    puts "Type in what you want to do next:"
+    puts "<Battle><Pokemon><Save>"
+    puts "(Saving will save your progress and quit the interface)"
+    
+    input = gets.chomp
+    input = input.downcase.capitalize
+    
+    case input
+    when "Battle"
+        battle
+    else
+        puts "Invalid Input!"
+        intermission
+    end
+end
+
+# move = PokeApi.get(move: "thunder-shock").name
+# poki = Pokemon.find_by(name: "pikachu")
+# poki.update(move: move)
+
+def battle
+    user = Pokemon.find_by(name: User.selected_poke)
+    opponent = Pokemon.find_by(user_id: nil).first
+    
+    # user_poke_id, opponent_id
+    #Battle.create()
 end
