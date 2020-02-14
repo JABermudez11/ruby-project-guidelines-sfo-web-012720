@@ -58,7 +58,7 @@ end
 
 def intermission
     puts "Type in what you want to do next:"
-    puts "<Battle><Profile><Pokemon><Save>"
+    puts "<Battle><Pokemon><Save>"
     puts "(Saving will save your progress and quit the interface)"
     
     input = gets.chomp
@@ -78,8 +78,9 @@ end
 # poki.update(move: move)
 
 def battle
-    # user_poke_id, opponent_id
-    user = Pokemon.find_by(user_id: )
+    user = Pokemon.find_by(name: User.selected_poke)
+    opponent = Pokemon.find_by(user_id: nil).first
     
+    # user_poke_id, opponent_id
     Battle.create()
 end
