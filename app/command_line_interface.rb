@@ -82,5 +82,5 @@ def battle
     opponent = Pokemon.find_by(user_id: nil).first
     
     # user_poke_id, opponent_id
-    Battle.create()
+    #Battle.create()
 end
